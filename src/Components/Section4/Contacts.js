@@ -5,8 +5,9 @@ import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styled from "styled-components";
 import {ToastContainer, toast} from 'react-toastify'
-import '../App.css';
+import '../../App.css';
 import 'react-toastify/dist/ReactToastify.css'
+import '../../index.css'
 
 
 const Contact = () => {
@@ -46,7 +47,9 @@ const Contact = () => {
     };
 
     return (
-        <div style={{ display: 'flex', justifyContent: 'center', backgroundColor:'#282c34'}}>
+        <section id="contact" style={{ display: 'flex', justifyContent: 'center', backgroundColor:'#282c34'}}>
+            <h1>Questions? </h1>
+            <h2>No Problem, Send Us An Email</h2>
             <StyledContactForm>
                 <form ref={form} onSubmit={sendEmail}>
                     <label>Name</label>
@@ -69,7 +72,7 @@ const Contact = () => {
                       />
                 </form>
             </StyledContactForm>
-        </div>
+        </section>
     );
 };
 
