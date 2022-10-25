@@ -5,19 +5,21 @@ import mug3 from './pictures/mug3.jpeg';
 import mug4 from './pictures/mug4.jpeg';
 import mug5 from './pictures/mug5.jpeg';
 
+
 const imagePaddingStyle = {
-    padding: '12.5px'
+    padding: '12.5px',
+    class : "rounded-circle"
 }
 
 function Image() {
     return (
       <div>
         
-        <img src={mug1} width="175" height="175" alt="mug1"  style={imagePaddingStyle}/>
-        <img src={mug2} width="175" height="175" alt="mug2"  style={imagePaddingStyle}/>
-        <img src={mug3} width="175" height="175" alt="mug3" style={imagePaddingStyle}/>
-        <img src={mug4} width="175" height="175" alt="mug4" style={imagePaddingStyle}/>
-        <img src={mug5} width="175" height="175" alt="mug5" style={imagePaddingStyle}/>
+        <img src={mug1} width="175" height="175" alt="mug1" class="rounded-circle"/>
+        <img src={mug2} width="175" height="175" alt="mug2"  class="rounded-circle"/>
+        <img src={mug3} width="175" height="175" alt="mug3" class="rounded-circle"/>
+        <img src={mug4} width="175" height="175" alt="mug4" class="rounded-circle"/>
+        <img src={mug5} width="175" height="175" alt="mug5" class="rounded-circle"/>
         
       </div>
 
